@@ -175,6 +175,7 @@
 		B418C1ED27137CDD002DC95B /* SceneModules */ = {
 			isa = PBXGroup;
 			children = (
+				B45D18F227176E60002F9867 /* MainTapBar */,
 				B418C1EE27137CFB002DC95B /* Main */,
 				B418C1FD27137EB1002DC95B /* BaseComponents */,
 			);
@@ -255,6 +256,13 @@
 				B418C21F27138D5F002DC95B /* Roboto-Black.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B45D18F227176E60002F9867 /* MainTapBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainTapBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
