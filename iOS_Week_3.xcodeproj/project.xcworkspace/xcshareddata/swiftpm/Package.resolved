@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "DefaultNetworkOperationPackage",
+        "repositoryURL": "https://github.com/burhanaliskan/DefaultNetworkOperationPackage",
+        "state": {
+          "branch": "master",
+          "revision": "ea4010af534b784a4e95509ef96dd81148fc9840",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

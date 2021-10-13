@@ -44,6 +44,7 @@
 		B4C6A545271779640015014C /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C6A544271779640015014C /* FavoriteViewController.swift */; };
 		B4C6A547271779700015014C /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C6A546271779700015014C /* FavoriteViewModel.swift */; };
 		B4C6A5492717797C0015014C /* FavoriteViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C6A5482717797C0015014C /* FavoriteViewBuilder.swift */; };
+		B4C6A54C2717862C0015014C /* DefaultNetworkOperationPackage in Frameworks */ = {isa = PBXBuildFile; productRef = B4C6A54B2717862C0015014C /* DefaultNetworkOperationPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4C6A54C2717862C0015014C /* DefaultNetworkOperationPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +317,9 @@
 			dependencies = (
 			);
 			name = iOS_Week_3;
+			packageProductDependencies = (
+				B4C6A54B2717862C0015014C /* DefaultNetworkOperationPackage */,
+			);
 			productName = iOS_Week_3;
 			productReference = B418C1B7271375C0002DC95B /* iOS_Week_3.app */;
 			productType = "com.apple.product-type.application";
@@ -387,6 +392,9 @@
 				Base,
 			);
 			mainGroup = B418C1AE271375C0002DC95B;
+			packageReferences = (
+				B4C6A54A2717862C0015014C /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */,
+			);
 			productRefGroup = B418C1B8271375C0002DC95B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -814,6 +822,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B4C6A54A2717862C0015014C /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/burhanaliskan/DefaultNetworkOperationPackage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B4C6A54B2717862C0015014C /* DefaultNetworkOperationPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4C6A54A2717862C0015014C /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */;
+			productName = DefaultNetworkOperationPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B418C1AF271375C0002DC95B /* Project object */;
 }
