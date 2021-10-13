@@ -10,8 +10,13 @@ import UIKit
 class MainViewBuilder {
     
     class func build() -> UIViewController {
-        let viewModel = MainViewModel()
-        let viewController = MainViewController(viewModel: viewModel)
-        return viewController
+        let mainViewModel = MainViewModel()
+        let mainViewController = MainViewController(viewModel: mainViewModel)
+        let navigationViewControler = UINavigationController(rootViewController: mainViewController)
+        mainViewController.title = "Home"
+        mainViewController.tabBarItem.image = UIImage(imageLiteralResourceName: GetImagesHelper.roundHome.rawValue)
+        mainViewController.tabBarItem.selectedImage = UIImage(imageLiteralResourceName: GetImagesHelper.outlineHome.rawValue)
+//        mainViewController.navigationController?.setNavigationBarHidden(true, animated: false)
+        return navigationViewControler
     }
 }

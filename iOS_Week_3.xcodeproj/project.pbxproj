@@ -38,6 +38,12 @@
 		B418C23027138D5F002DC95B /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B418C21E27138D5F002DC95B /* Roboto-Thin.ttf */; };
 		B418C23127138D5F002DC95B /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B418C21F27138D5F002DC95B /* Roboto-Black.ttf */; };
 		B418C23327138EC6002DC95B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418C23227138EC6002DC95B /* TestViewController.swift */; };
+		B45D18F427176F00002F9867 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D18F327176F00002F9867 /* MainTabBarController.swift */; };
+		B45D18F627176F97002F9867 /* MainTabBarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D18F527176F97002F9867 /* MainTabBarBuilder.swift */; };
+		B45D18F927177420002F9867 /* GetImagesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D18F827177420002F9867 /* GetImagesHelper.swift */; };
+		B4C6A545271779640015014C /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C6A544271779640015014C /* FavoriteViewController.swift */; };
+		B4C6A547271779700015014C /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C6A546271779700015014C /* FavoriteViewModel.swift */; };
+		B4C6A5492717797C0015014C /* FavoriteViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C6A5482717797C0015014C /* FavoriteViewBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +99,12 @@
 		B418C21E27138D5F002DC95B /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		B418C21F27138D5F002DC95B /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		B418C23227138EC6002DC95B /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		B45D18F327176F00002F9867 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B45D18F527176F97002F9867 /* MainTabBarBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarBuilder.swift; sourceTree = "<group>"; };
+		B45D18F827177420002F9867 /* GetImagesHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetImagesHelper.swift; sourceTree = "<group>"; };
+		B4C6A544271779640015014C /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		B4C6A546271779700015014C /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		B4C6A5482717797C0015014C /* FavoriteViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +187,7 @@
 		B418C1ED27137CDD002DC95B /* SceneModules */ = {
 			isa = PBXGroup;
 			children = (
+				B4C6A543271779480015014C /* Favorites */,
 				B45D18F227176E60002F9867 /* MainTapBar */,
 				B418C1EE27137CFB002DC95B /* Main */,
 				B418C1FD27137EB1002DC95B /* BaseComponents */,
@@ -206,6 +219,7 @@
 		B418C20827138D5F002DC95B /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				B45D18F727177420002F9867 /* AssetHelper */,
 				B418C20B27138D5F002DC95B /* Localizables */,
 				B418C20D27138D5F002DC95B /* Extensions */,
 				B418C21127138D5F002DC95B /* FontManagers */,
@@ -261,8 +275,28 @@
 		B45D18F227176E60002F9867 /* MainTapBar */ = {
 			isa = PBXGroup;
 			children = (
+				B45D18F327176F00002F9867 /* MainTabBarController.swift */,
+				B45D18F527176F97002F9867 /* MainTabBarBuilder.swift */,
 			);
 			path = MainTapBar;
+			sourceTree = "<group>";
+		};
+		B45D18F727177420002F9867 /* AssetHelper */ = {
+			isa = PBXGroup;
+			children = (
+				B45D18F827177420002F9867 /* GetImagesHelper.swift */,
+			);
+			path = AssetHelper;
+			sourceTree = "<group>";
+		};
+		B4C6A543271779480015014C /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				B4C6A544271779640015014C /* FavoriteViewController.swift */,
+				B4C6A546271779700015014C /* FavoriteViewModel.swift */,
+				B4C6A5482717797C0015014C /* FavoriteViewBuilder.swift */,
+			);
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,14 +443,20 @@
 			files = (
 				B418C23327138EC6002DC95B /* TestViewController.swift in Sources */,
 				B418C1FA27137E83002DC95B /* MainViewModel.swift in Sources */,
+				B45D18F927177420002F9867 /* GetImagesHelper.swift in Sources */,
+				B45D18F427176F00002F9867 /* MainTabBarController.swift in Sources */,
+				B4C6A545271779640015014C /* FavoriteViewController.swift in Sources */,
 				B418C22127138D5F002DC95B /* Localizables.swift in Sources */,
 				B418C1BB271375C0002DC95B /* AppDelegate.swift in Sources */,
+				B4C6A547271779700015014C /* FavoriteViewModel.swift in Sources */,
 				B418C1BD271375C0002DC95B /* SceneDelegate.swift in Sources */,
 				B418C1F827137E64002DC95B /* MainViewController.swift in Sources */,
 				B418C20427137EB1002DC95B /* GenericBaseView.swift in Sources */,
 				B418C22227138D5F002DC95B /* UIView+Extensions.swift in Sources */,
 				B418C22427138D5F002DC95B /* String+Extension.swift in Sources */,
+				B45D18F627176F97002F9867 /* MainTabBarBuilder.swift in Sources */,
 				B418C20327137EB1002DC95B /* BaseViewController.swift in Sources */,
+				B4C6A5492717797C0015014C /* FavoriteViewBuilder.swift in Sources */,
 				B418C22527138D5F002DC95B /* FontManager.swift in Sources */,
 				B418C20527137EB1002DC95B /* BaseView.swift in Sources */,
 				B418C1FC27137E8E002DC95B /* MainViewBuilder.swift in Sources */,
