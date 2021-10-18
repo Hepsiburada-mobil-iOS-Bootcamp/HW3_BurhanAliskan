@@ -23,15 +23,23 @@ class MainViewController: BaseViewController<MainViewModel> {
         addButton()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     @objc func pushButtonAction(_ sender: UIButton) {
-        print("Burhan")
-        let testViewController = TestViewController()
-        self.navigationController?.pushViewController(testViewController, animated: true)
+        fireCharacterListView()
     }
     
     func addButton() {
         view.addSubview(pushButton)
         pushButton.anchor(centerX: view.centerXAnchor, centerY: view.centerYAnchor)
+    }
+    
+    private func fireCharacterListView() {
+        let characterListView = CharacterListViewBuilder.build()
+        navigationController?.pushViewController(characterListView, animated: true)
     }
     
     

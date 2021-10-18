@@ -41,6 +41,10 @@
 		B45D18F427176F00002F9867 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D18F327176F00002F9867 /* MainTabBarController.swift */; };
 		B45D18F627176F97002F9867 /* MainTabBarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D18F527176F97002F9867 /* MainTabBarBuilder.swift */; };
 		B45D18F927177420002F9867 /* GetImagesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D18F827177420002F9867 /* GetImagesHelper.swift */; };
+		B471CB04271E077D009A1356 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B471CB03271E077D009A1356 /* CharacterListViewController.swift */; };
+		B471CB06271E078F009A1356 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B471CB05271E078F009A1356 /* CharacterListViewModel.swift */; };
+		B471CB08271E079C009A1356 /* CharacterListViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B471CB07271E079C009A1356 /* CharacterListViewBuilder.swift */; };
+		B471CB0C271E0A4E009A1356 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B471CB0B271E0A4E009A1356 /* ItemListView.swift */; };
 		B4C6A545271779640015014C /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C6A544271779640015014C /* FavoriteViewController.swift */; };
 		B4C6A547271779700015014C /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C6A546271779700015014C /* FavoriteViewModel.swift */; };
 		B4C6A5492717797C0015014C /* FavoriteViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C6A5482717797C0015014C /* FavoriteViewBuilder.swift */; };
@@ -103,6 +107,10 @@
 		B45D18F327176F00002F9867 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		B45D18F527176F97002F9867 /* MainTabBarBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarBuilder.swift; sourceTree = "<group>"; };
 		B45D18F827177420002F9867 /* GetImagesHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetImagesHelper.swift; sourceTree = "<group>"; };
+		B471CB03271E077D009A1356 /* CharacterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
+		B471CB05271E078F009A1356 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
+		B471CB07271E079C009A1356 /* CharacterListViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewBuilder.swift; sourceTree = "<group>"; };
+		B471CB0B271E0A4E009A1356 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		B4C6A544271779640015014C /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		B4C6A546271779700015014C /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		B4C6A5482717797C0015014C /* FavoriteViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewBuilder.swift; sourceTree = "<group>"; };
@@ -157,6 +165,8 @@
 		B418C1B9271375C0002DC95B /* iOS_Week_3 */ = {
 			isa = PBXGroup;
 			children = (
+				B471CB09271E0A0F009A1356 /* Components */,
+				B418C1FD27137EB1002DC95B /* BaseComponents */,
 				B418C1ED27137CDD002DC95B /* SceneModules */,
 				B418C20827138D5F002DC95B /* Utilities */,
 				B418C1BA271375C0002DC95B /* AppDelegate.swift */,
@@ -189,10 +199,10 @@
 		B418C1ED27137CDD002DC95B /* SceneModules */ = {
 			isa = PBXGroup;
 			children = (
+				B471CB02271E0766009A1356 /* CharacterList */,
 				B4C6A543271779480015014C /* Favorites */,
 				B45D18F227176E60002F9867 /* MainTapBar */,
 				B418C1EE27137CFB002DC95B /* Main */,
-				B418C1FD27137EB1002DC95B /* BaseComponents */,
 			);
 			path = SceneModules;
 			sourceTree = "<group>";
@@ -289,6 +299,32 @@
 				B45D18F827177420002F9867 /* GetImagesHelper.swift */,
 			);
 			path = AssetHelper;
+			sourceTree = "<group>";
+		};
+		B471CB02271E0766009A1356 /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				B471CB03271E077D009A1356 /* CharacterListViewController.swift */,
+				B471CB05271E078F009A1356 /* CharacterListViewModel.swift */,
+				B471CB07271E079C009A1356 /* CharacterListViewBuilder.swift */,
+			);
+			name = CharacterList;
+			sourceTree = "<group>";
+		};
+		B471CB09271E0A0F009A1356 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B471CB0A271E0A35009A1356 /* ItemListViewComponent */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B471CB0A271E0A35009A1356 /* ItemListViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				B471CB0B271E0A4E009A1356 /* ItemListView.swift */,
+			);
+			name = ItemListViewComponent;
 			sourceTree = "<group>";
 		};
 		B4C6A543271779480015014C /* Favorites */ = {
@@ -453,6 +489,8 @@
 				B418C1FA27137E83002DC95B /* MainViewModel.swift in Sources */,
 				B45D18F927177420002F9867 /* GetImagesHelper.swift in Sources */,
 				B45D18F427176F00002F9867 /* MainTabBarController.swift in Sources */,
+				B471CB04271E077D009A1356 /* CharacterListViewController.swift in Sources */,
+				B471CB08271E079C009A1356 /* CharacterListViewBuilder.swift in Sources */,
 				B4C6A545271779640015014C /* FavoriteViewController.swift in Sources */,
 				B418C22127138D5F002DC95B /* Localizables.swift in Sources */,
 				B418C1BB271375C0002DC95B /* AppDelegate.swift in Sources */,
@@ -460,11 +498,13 @@
 				B418C1BD271375C0002DC95B /* SceneDelegate.swift in Sources */,
 				B418C1F827137E64002DC95B /* MainViewController.swift in Sources */,
 				B418C20427137EB1002DC95B /* GenericBaseView.swift in Sources */,
+				B471CB06271E078F009A1356 /* CharacterListViewModel.swift in Sources */,
 				B418C22227138D5F002DC95B /* UIView+Extensions.swift in Sources */,
 				B418C22427138D5F002DC95B /* String+Extension.swift in Sources */,
 				B45D18F627176F97002F9867 /* MainTabBarBuilder.swift in Sources */,
 				B418C20327137EB1002DC95B /* BaseViewController.swift in Sources */,
 				B4C6A5492717797C0015014C /* FavoriteViewBuilder.swift in Sources */,
+				B471CB0C271E0A4E009A1356 /* ItemListView.swift in Sources */,
 				B418C22527138D5F002DC95B /* FontManager.swift in Sources */,
 				B418C20527137EB1002DC95B /* BaseView.swift in Sources */,
 				B418C1FC27137E8E002DC95B /* MainViewBuilder.swift in Sources */,
