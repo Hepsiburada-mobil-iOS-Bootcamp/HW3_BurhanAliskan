@@ -9,7 +9,7 @@ import UIKit
 
 class CharacterListViewController: BaseViewController<CharacterListViewModel> {
 
-    private var itemListView: ItemListView!
+    private var mainComponent: ItemListView!
     
     override func prepareViewControllerSetup() {
         super.prepareViewControllerSetup()
@@ -22,16 +22,12 @@ class CharacterListViewController: BaseViewController<CharacterListViewModel> {
     }
     
     func addMainComponent() {
-        itemListView = ItemListView()
-        itemListView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(itemListView)
+        mainComponent = ItemListView()
+        mainComponent.translatesAutoresizingMaskIntoConstraints = false
+        mainComponent.delegate = viewModel
+        view.addSubview(mainComponent)
         
-        NSLayoutConstraint.activate([
-            itemListView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            itemListView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            itemListView.topAnchor.constraint(equalTo: view.topAnchor),
-            itemListView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
+        mainComponent.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
     }
 
 }
