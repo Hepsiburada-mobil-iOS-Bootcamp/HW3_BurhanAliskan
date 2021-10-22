@@ -3,10 +3,10 @@
     "pins": [
       {
         "package": "DefaultNetworkOperationPackage",
-        "repositoryURL": "https://github.com/burhanaliskan/DefaultNetworkOperationPackage",
+        "repositoryURL": "https://github.com/burhanaliskan/DefaultNetworkOperationPackage.git",
         "state": {
           "branch": "master",
-          "revision": "ea4010af534b784a4e95509ef96dd81148fc9840",
+          "revision": "cc5ca6db37904d124300a569fbc27557539c8cc7",
           "version": null
         }
       }

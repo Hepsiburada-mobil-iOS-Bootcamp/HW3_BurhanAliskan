@@ -38,6 +38,8 @@
 		B418C23027138D5F002DC95B /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B418C21E27138D5F002DC95B /* Roboto-Thin.ttf */; };
 		B418C23127138D5F002DC95B /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B418C21F27138D5F002DC95B /* Roboto-Black.ttf */; };
 		B418C23327138EC6002DC95B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418C23227138EC6002DC95B /* TestViewController.swift */; };
+		B41BFC15272355E6007141EE /* DefaultNetworkOperationPackage in Frameworks */ = {isa = PBXBuildFile; productRef = B41BFC14272355E6007141EE /* DefaultNetworkOperationPackage */; };
+		B41BFC192723572B007141EE /* MarvelCharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41BFC182723572B007141EE /* MarvelCharacterResponse.swift */; };
 		B45D18F427176F00002F9867 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D18F327176F00002F9867 /* MainTabBarController.swift */; };
 		B45D18F627176F97002F9867 /* MainTabBarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D18F527176F97002F9867 /* MainTabBarBuilder.swift */; };
 		B45D18F927177420002F9867 /* GetImagesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D18F827177420002F9867 /* GetImagesHelper.swift */; };
@@ -48,7 +50,6 @@
 		B4C6A545271779640015014C /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C6A544271779640015014C /* FavoriteViewController.swift */; };
 		B4C6A547271779700015014C /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C6A546271779700015014C /* FavoriteViewModel.swift */; };
 		B4C6A5492717797C0015014C /* FavoriteViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C6A5482717797C0015014C /* FavoriteViewBuilder.swift */; };
-		B4C6A54C2717862C0015014C /* DefaultNetworkOperationPackage in Frameworks */ = {isa = PBXBuildFile; productRef = B4C6A54B2717862C0015014C /* DefaultNetworkOperationPackage */; };
 		B4D453552720A44E00F656D7 /* ItemListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D453542720A44E00F656D7 /* ItemListProtocol.swift */; };
 		B4D453572720A55300F656D7 /* GenericDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D453562720A55300F656D7 /* GenericDataProtocol.swift */; };
 		B4D4535A2720AA7500F656D7 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D453592720AA7500F656D7 /* ItemTableViewCell.swift */; };
@@ -116,6 +117,7 @@
 		B418C21E27138D5F002DC95B /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		B418C21F27138D5F002DC95B /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		B418C23227138EC6002DC95B /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		B41BFC182723572B007141EE /* MarvelCharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacterResponse.swift; sourceTree = "<group>"; };
 		B45D18F327176F00002F9867 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		B45D18F527176F97002F9867 /* MainTabBarBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarBuilder.swift; sourceTree = "<group>"; };
 		B45D18F827177420002F9867 /* GetImagesHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetImagesHelper.swift; sourceTree = "<group>"; };
@@ -145,7 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4C6A54C2717862C0015014C /* DefaultNetworkOperationPackage in Frameworks */,
+				B41BFC15272355E6007141EE /* DefaultNetworkOperationPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +191,7 @@
 		B418C1B9271375C0002DC95B /* iOS_Week_3 */ = {
 			isa = PBXGroup;
 			children = (
+				B41BFC1627235708007141EE /* Models */,
 				B4D4536B2720AEAE00F656D7 /* Manager */,
 				B471CB09271E0A0F009A1356 /* Components */,
 				B418C1FD27137EB1002DC95B /* BaseComponents */,
@@ -311,6 +314,22 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		B41BFC1627235708007141EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B41BFC1727235710007141EE /* Marvel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B41BFC1727235710007141EE /* Marvel */ = {
+			isa = PBXGroup;
+			children = (
+				B41BFC182723572B007141EE /* MarvelCharacterResponse.swift */,
+			);
+			path = Marvel;
+			sourceTree = "<group>";
+		};
 		B45D18F227176E60002F9867 /* MainTapBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -430,7 +449,7 @@
 			);
 			name = iOS_Week_3;
 			packageProductDependencies = (
-				B4C6A54B2717862C0015014C /* DefaultNetworkOperationPackage */,
+				B41BFC14272355E6007141EE /* DefaultNetworkOperationPackage */,
 			);
 			productName = iOS_Week_3;
 			productReference = B418C1B7271375C0002DC95B /* iOS_Week_3.app */;
@@ -505,7 +524,7 @@
 			);
 			mainGroup = B418C1AE271375C0002DC95B;
 			packageReferences = (
-				B4C6A54A2717862C0015014C /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */,
+				B41BFC13272355E6007141EE /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */,
 			);
 			productRefGroup = B418C1B8271375C0002DC95B /* Products */;
 			projectDirPath = "";
@@ -584,6 +603,7 @@
 				B418C22427138D5F002DC95B /* String+Extension.swift in Sources */,
 				B4D453552720A44E00F656D7 /* ItemListProtocol.swift in Sources */,
 				B4D453702720B21A00F656D7 /* ItemTableViewCellData.swift in Sources */,
+				B41BFC192723572B007141EE /* MarvelCharacterResponse.swift in Sources */,
 				B4D4536E2720AEC000F656D7 /* ImageCacheManager.swift in Sources */,
 				B4D453692720AD3C00F656D7 /* CustomImageViewComponent.swift in Sources */,
 				B45D18F627176F97002F9867 /* MainTabBarBuilder.swift in Sources */,
@@ -952,9 +972,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B4C6A54A2717862C0015014C /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */ = {
+		B41BFC13272355E6007141EE /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/burhanaliskan/DefaultNetworkOperationPackage";
+			repositoryURL = "https://github.com/burhanaliskan/DefaultNetworkOperationPackage.git";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -963,9 +983,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B4C6A54B2717862C0015014C /* DefaultNetworkOperationPackage */ = {
+		B41BFC14272355E6007141EE /* DefaultNetworkOperationPackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B4C6A54A2717862C0015014C /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */;
+			package = B41BFC13272355E6007141EE /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */;
 			productName = DefaultNetworkOperationPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
