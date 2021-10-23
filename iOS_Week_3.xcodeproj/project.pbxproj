@@ -50,6 +50,8 @@
 		B4C6A545271779640015014C /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C6A544271779640015014C /* FavoriteViewController.swift */; };
 		B4C6A547271779700015014C /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C6A546271779700015014C /* FavoriteViewModel.swift */; };
 		B4C6A5492717797C0015014C /* FavoriteViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C6A5482717797C0015014C /* FavoriteViewBuilder.swift */; };
+		B4C746382724156C0025A8F9 /* MarvelCharactersApiServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C746372724156C0025A8F9 /* MarvelCharactersApiServiceProvider.swift */; };
+		B4C7463A272415840025A8F9 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C74639272415840025A8F9 /* BaseRequest.swift */; };
 		B4D453552720A44E00F656D7 /* ItemListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D453542720A44E00F656D7 /* ItemListProtocol.swift */; };
 		B4D453572720A55300F656D7 /* GenericDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D453562720A55300F656D7 /* GenericDataProtocol.swift */; };
 		B4D4535A2720AA7500F656D7 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D453592720AA7500F656D7 /* ItemTableViewCell.swift */; };
@@ -128,6 +130,8 @@
 		B4C6A544271779640015014C /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		B4C6A546271779700015014C /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		B4C6A5482717797C0015014C /* FavoriteViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewBuilder.swift; sourceTree = "<group>"; };
+		B4C746372724156C0025A8F9 /* MarvelCharactersApiServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharactersApiServiceProvider.swift; sourceTree = "<group>"; };
+		B4C74639272415840025A8F9 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		B4D453542720A44E00F656D7 /* ItemListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListProtocol.swift; sourceTree = "<group>"; };
 		B4D453562720A55300F656D7 /* GenericDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataProtocol.swift; sourceTree = "<group>"; };
 		B4D453592720AA7500F656D7 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -326,6 +330,8 @@
 			isa = PBXGroup;
 			children = (
 				B41BFC182723572B007141EE /* MarvelCharacterResponse.swift */,
+				B4C746372724156C0025A8F9 /* MarvelCharactersApiServiceProvider.swift */,
+				B4C74639272415840025A8F9 /* BaseRequest.swift */,
 			);
 			path = Marvel;
 			sourceTree = "<group>";
@@ -591,6 +597,7 @@
 				B4C6A545271779640015014C /* FavoriteViewController.swift in Sources */,
 				B4D453572720A55300F656D7 /* GenericDataProtocol.swift in Sources */,
 				B418C22127138D5F002DC95B /* Localizables.swift in Sources */,
+				B4C7463A272415840025A8F9 /* BaseRequest.swift in Sources */,
 				B418C1BB271375C0002DC95B /* AppDelegate.swift in Sources */,
 				B4D453602720AC8D00F656D7 /* LabelPackView.swift in Sources */,
 				B4C6A547271779700015014C /* FavoriteViewModel.swift in Sources */,
@@ -604,6 +611,7 @@
 				B4D453552720A44E00F656D7 /* ItemListProtocol.swift in Sources */,
 				B4D453702720B21A00F656D7 /* ItemTableViewCellData.swift in Sources */,
 				B41BFC192723572B007141EE /* MarvelCharacterResponse.swift in Sources */,
+				B4C746382724156C0025A8F9 /* MarvelCharactersApiServiceProvider.swift in Sources */,
 				B4D4536E2720AEC000F656D7 /* ImageCacheManager.swift in Sources */,
 				B4D453692720AD3C00F656D7 /* CustomImageViewComponent.swift in Sources */,
 				B45D18F627176F97002F9867 /* MainTabBarBuilder.swift in Sources */,
