@@ -64,6 +64,7 @@
 		B4D4536A2720AD3C00F656D7 /* CustomImageLoadingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D453662720AD3C00F656D7 /* CustomImageLoadingType.swift */; };
 		B4D4536E2720AEC000F656D7 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4536D2720AEC000F656D7 /* ImageCacheManager.swift */; };
 		B4D453702720B21A00F656D7 /* ItemTableViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4536F2720B21A00F656D7 /* ItemTableViewCellData.swift */; };
+		B4F860FB2725906900A21165 /* CharacterListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F860FA2725906900A21165 /* CharacterListViewState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +145,7 @@
 		B4D453662720AD3C00F656D7 /* CustomImageLoadingType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageLoadingType.swift; sourceTree = "<group>"; };
 		B4D4536D2720AEC000F656D7 /* ImageCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
 		B4D4536F2720B21A00F656D7 /* ItemTableViewCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCellData.swift; sourceTree = "<group>"; };
+		B4F860FA2725906900A21165 /* CharacterListViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -359,6 +361,7 @@
 				B471CB03271E077D009A1356 /* CharacterListViewController.swift */,
 				B471CB05271E078F009A1356 /* CharacterListViewModel.swift */,
 				B471CB07271E079C009A1356 /* CharacterListViewBuilder.swift */,
+				B4F860FA2725906900A21165 /* CharacterListViewState.swift */,
 			);
 			name = CharacterList;
 			sourceTree = "<group>";
@@ -590,6 +593,7 @@
 				B4D4535A2720AA7500F656D7 /* ItemTableViewCell.swift in Sources */,
 				B418C1FA27137E83002DC95B /* MainViewModel.swift in Sources */,
 				B45D18F927177420002F9867 /* GetImagesHelper.swift in Sources */,
+				B4F860FB2725906900A21165 /* CharacterListViewState.swift in Sources */,
 				B4D4535C2720AAFE00F656D7 /* BaseTableViewCell.swift in Sources */,
 				B45D18F427176F00002F9867 /* MainTabBarController.swift in Sources */,
 				B471CB04271E077D009A1356 /* CharacterListViewController.swift in Sources */,

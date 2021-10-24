@@ -14,6 +14,7 @@ class CharacterListViewController: BaseViewController<CharacterListViewModel> {
     override func prepareViewControllerSetup() {
         super.prepareViewControllerSetup()
         addMainComponent()
+        subscribeViewModelListeners()
         viewModel.getCharacterList()
     }
     
@@ -29,6 +30,17 @@ class CharacterListViewController: BaseViewController<CharacterListViewModel> {
         view.addSubview(mainComponent)
         
         mainComponent.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
+    }
+    
+    private func subscribeViewModelListeners() {
+        viewModel.subscribeState { [weak self] state in
+            switch state {
+            case .done:
+                print("Data is ready")
+            case .loading:
+                print("Data is loading")
+            }
+        }
     }
 
 }

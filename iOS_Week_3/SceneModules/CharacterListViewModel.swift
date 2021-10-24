@@ -10,17 +10,27 @@ import DefaultNetworkOperationPackage
 
 class CharacterListViewModel  {
     
+    private var state: CharacterListStateBlock?
+    
+    init() {}
     
     func getCharacterList() {
-        fireApiCall { result in
+        
+        state?(.loading)
+        
+        fireApiCall { [weak self] result in
             switch result {
             case.success(let response):
                 print(response)
             case.failure(let errorResponse):
                 print(errorResponse)
             }
-            
+            self?.state?(.done)
         }
+    }
+    
+    func subscribeState(completion: @escaping CharacterListStateBlock) {
+        state = completion
     }
     
     private func fireApiCall(with completion: @escaping (Result<CharacterDataResponse, ErrorResponse>) -> Void) {
